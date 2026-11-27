@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Black Friday Deal Radar — 35 checked deals, Nov 27 2026</title>
+<meta name="description" content="A Black Friday and Cyber Monday deal finder. Every price checked on Nov 27, 2026 at its store, with an honest verdict on whether each deal is really a deal.">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="main.js"></script>
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="kicker">BLACK FRIDAY &middot; CYBER MONDAY &middot; NOV 27&ndash;30, 2026</p>
+    <h1>Black Friday Deal Radar</h1>
+    <p class="tagline">Real deals, checked today. No inflated &ldquo;was&rdquo; prices, no guesswork &mdash; every price read at its store, with a straight verdict on each one.</p>
+    <div class="stats" id="stats" aria-label="Sale summary"></div>
+  </div>
+</header>
+
+<main>
+  <section class="controls" aria-label="Search and filter deals">
+    <input id="search" type="search" placeholder="Search a product, brand or store&hellip; e.g. AirPods, Dyson, TV" aria-label="Search deals" autocomplete="off">
+    <div class="filter-row">
+      <label>Category
+        <select id="category" aria-label="Filter by category"></select>
+      </label>
+      <label>Store
+        <select id="store" aria-label="Filter by store"></select>
+      </label>
+      <label>Discount
+        <select id="discount" aria-label="Filter by discount">
+          <option value="0">Any discount</option>
+          <option value="20">20% off or more</option>
+          <option value="30">30% off or more</option>
+          <option value="40">40% off or more</option>
+          <option value="50">50% off or more</option>
+        </select>
+      </label>
+      <label>Sort
+        <select id="sort" aria-label="Sort deals">
+          <option value="best">Best deals first</option>
+          <option value="discount">Biggest % off</option>
+          <option value="saving">Biggest $ saving</option>
+          <option value="price-low">Price: low to high</option>
+          <option value="price-high">Price: high to low</option>
+        </select>
+      </label>
+      <label class="check"><input type="checkbox" id="only-verified"> New lows only</label>
+    </div>
+    <p class="verdict-key" aria-label="Verdict key">
+      <span><b class="dot new-low"></b> New low — lowest price reported</span>
+      <span><b class="dot strong"></b> Strong price</span>
+      <span><b class="dot routine"></b> Routine sale — small cut</span>
+    </p>
+  </section>
+
+  <p class="count" id="count" role="status"></p>
+  <section class="grid" id="grid" aria-live="polite"></section>
+
+  <section class="detail" id="detail" hidden></section>
+
+  <section class="method">
+    <h2>How these prices were checked</h2>
+    <p>Every deal on this page was found and checked on <strong>Friday, November 27, 2026</strong> (Black Friday), by reading the price at the named store or in a deals source that names the store and the price. Each card shows when its price was checked and where it was read. Discounts are computed from the two prices shown — if the maths does not add up, the deal does not belong here. Prices can change during the sale; tap through to the store to confirm before you buy.</p>
+    <p>The verdict on each deal is the honest part: <strong>New low</strong> means the sources report it as the lowest price seen; <strong>Strong price</strong> means a genuinely good price even if it is not the lowest ever; <strong>Routine sale</strong> means the cut is small or the same price shows up often — buy it because you want it, not because of the discount. Where a better price exists at another store, the card says so.</p>
+    <p>Sale windows: Amazon Black Friday Week Nov 19&ndash;30 &middot; Best Buy Black Friday Sale Nov 19&ndash;28 &middot; Walmart Black Friday Deals Nov 23&ndash;29 &middot; Target Black Friday sale Nov 22&ndash;29. Cyber Monday is Monday, November 30.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Black Friday Deal Radar — an independent deal finder. Not affiliated with Amazon, Best Buy, Walmart, Target or any brand listed. Prices in US dollars, checked Nov 27, 2026, 11:15 UTC. Store links open the store&rsquo;s own search for that product.</p>
+</footer>
+</body>
+</html>
